@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Formular</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            position: relative;
+            top: 300px
+        }
+        .container {
+            width: 300px;
+            height: 250px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            position: relative; top: 100px; left: -190px;
+        }
+        .container2 {
+            width: 700px;
+            height: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 10px solid #ccc;
+            border-radius: 5px;
+            position: relative; top: -150px;
+        }
+        .container h2 {
+            text-align: center;
+        }
+        .container3 {
+            width: 300px;
+            height: 250px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            position: relative; top: -191px;left: 190px;
+        }
+        
+        .container input[type="text"],
+        .container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .container input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        #login_knap {
+          width: 60px;
+          background-color: #4CAF50;
+            color: white;
+            margin: 0 auto;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 30px;
+            cursor: pointer;
+            position: relative;
+            top: 0px;
+            left: 0px; 
+        } 
+
+        #login_knap:hover {
+          background-color: #45a049;
+          border: 2px solid #61504b;
+
+        }
+        #login_knap:focus {
+          background-color: #45a049;
+          border: 2px solid #61504b;
+        }
+        #Back_knap {
+          width: 50px;
+          background-color: red;
+            color: white;
+            margin: 0 auto;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 30px;
+            cursor: pointer;
+            position: relative;
+            top: 13px;
+            left: -250px; 
+        }
+        #Back_knap:hover {
+          background-color: #df3030;
+          border: 1px solid #61504b;
+
+        }
+        #Back_knap:focus {
+          background-color: #df3030;
+          border: 1px solid #61504b;
+        }
+    </style>
+</head>
+<body>
+<div class="container2">
+    <nav id ="Back_knap">
+        <a href="./hej.html">Back</a>
+      </nav>
+<div class="container">
+    <h2>Login</h2>
+    <form action="/login" method="post">
+        <label for="username">Brugernavn:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Adgangskode:</label>
+        <input type="password" id="password" name="password" required>
+        <!--<input type="submit" value="Log ind"> -->
+
+        <nav id="login_knap">
+          <a href="./hej.html">Log ind</a>
+        </nav>
+    </form>
+</div>
+<div class="container3">
+    <h2>Login</h2>
+    <form action="/login" method="post">
+        <label for="username">Brugernavn:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Adgangskode:</label>
+        <input type="password" id="password" name="password" required>
+        <!--<input type="submit" value="Log ind"> -->
+
+        <nav id="login_knap">
+          <a href="./hej.html">Log ind</a>
+        </nav>
+    </form>
+</div>
+</div>
+
+</body>
+</html>

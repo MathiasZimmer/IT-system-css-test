@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h2>Login</h2>
+    <div id="login-form">
+        <label for="username">Brugernavn:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Adgangskode:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <button onclick="checkLogin()">Log ind</button>
+    </div>
+
+    <div id="login-success" style="display: none;">
+        <p>Velkommen, du er logget ind!</p>
+    </div>
+
+    <script>
+        function checkLogin() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Simpel logik for at tjekke login-oplysninger
+            if (username === "admin" && password === "password") {
+                // Skjul login-formularen
+                <nav>
+                    <a href="./login.html">login</a>
+                </nav>
+                // Vis login-success beskeden
+                document.getElementById("login-success").style.display = "block";
+            } else {
+                alert("Forkert brugernavn eller adgangskode.");
+            }
+        }
+    </script>
+</body>
+</html>
